@@ -1,2 +1,0 @@
-0 Shoplifting
-1 Normal
