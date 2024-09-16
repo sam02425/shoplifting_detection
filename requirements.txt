@@ -1,0 +1,11 @@
+# This is the requirements.txt file in the shoplifting_detection\ directory
+torch
+torchvision
+transformers
+opencv-python
+numpy
+pyyaml
+tensorboard
+tqdm
+Pillow
+easydict

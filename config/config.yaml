@@ -1,0 +1,29 @@
+DATA:
+  NUM_CLASSES: 2
+  ROOT: 'data/'
+  TRAIN_FILE: 'data/train.txt'
+  VAL_FILE: 'data/val.txt'
+  NUM_FRAMES: 8
+  NUM_WORKERS: 4
+  IMG_SIZE: 224
+
+MODEL:
+  VIDEO:
+    NAME: 'videofocalnet_tiny'
+    PRETRAINED: True
+  TEXT_GENERATOR:
+    NAME: 'gpt2'
+  TEXT_ANALYZER:
+    NAME: 'distilbert-base-uncased'
+
+TRAIN:
+  BATCH_SIZE: 4
+  NUM_EPOCHS: 50
+  LEARNING_RATE: 0.0001
+  WEIGHT_DECAY: 0.0001
+  WARMUP_EPOCHS: 5
+  ACCUMULATION_STEPS: 8
+
+
+DEVICE: 'cuda'
+OUTPUT_DIR: 'output/'
